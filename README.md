@@ -11,7 +11,7 @@
 
 ## 🚀 Live Demo
 
-Check out the website here: [[Your GitHub Pages link](https://johnmohamed2565.github.io/Portfolio/)]
+Check out the website here: [Live Website:(https://johnmohamed2565.github.io/Portfolio/)]
 
 ## 🛠️ Tech Stack
 
@@ -32,12 +32,12 @@ Check out the website here: [[Your GitHub Pages link](https://johnmohamed2565.gi
 ## ✍️ Author
 
 **JOHNMOHAMED**  
-[[Your GitHub Profile Link](https://github.com/Johnmohamed2565)]  
-[[LinkedIn Profile Link or Email](https://www.linkedin.com/in/john-mohamed/)]
+[Github:(https://github.com/Johnmohamed2565)]  
+[Linkedin:(https://www.linkedin.com/in/john-mohamed/)]
 
 ## 📬 Contact
 
-Feel free to reach out via [johnmohamed0001@gmail.com] for feedback, collaboration, or questions.
+Feel free to reach out via [Email:johnmohamed0001@gmail.com] for feedback, collaboration, or questions.
 
 ---
 
