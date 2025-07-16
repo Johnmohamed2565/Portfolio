@@ -17,7 +17,7 @@
         <div>
             <nav class="navBar">
                 <p class="heading_porfolio">P<span>o</span>r<span>t</span>f<span>o</span>l<span>i</span>o</p>
-                <ul>
+                <ul id="nav-menu">
                     <li><a href="#home-section">Home</a></li>
                     <li><a href="#about-section">About</a></li>
                     <li><a href="#project-section">Projects</a></li>
@@ -25,14 +25,7 @@
                     <li><a href="#skill-section">Skills</a></li>
                     <li><a href="#contact-section">Contact</a></li>
                 </ul>
-                <select id="nav-select" aria-label="Navigation Menu">
-                    <option value="home-section">Home</option>
-                    <option value="#about-section">About</option>
-                    <option value="#project-section">Projects</option>
-                    <option value="#resume-section">Resume</option>
-                    <li><a href="#skill-section">Skills</a></li>
-                    <option value="#contact-section">Contact</option>
-                </select>
+                <button class="menu-toggle" onclick="toggleMenu()">☰</button>
             </nav>
         </div>
     </header>
@@ -267,12 +260,22 @@
         </section>
     </footer>
     <script>
-        document.getElementById('nav-select').addEventListener('change', function () {
-            var value = this.value;
-            if (value) {
-                window.location.href = value;
-            }
+        function toggleMenu() {
+            document.getElementById("nav-menu").classList.toggle("active");
+        }
+
+        // Close the mobile menu when a nav link is clicked
+        document.querySelectorAll('#nav-menu li a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('nav-menu').classList.remove('active');
+            });
         });
+        // document.getElementById('nav-select').addEventListener('change', function () {
+        //     var value = this.value;
+        //     if (value) {
+        //         window.location.to = value;
+        //     }
+        // });
 
         // Modal functionality
         const modal = document.getElementById('resume-modal');
