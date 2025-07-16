@@ -443,7 +443,52 @@ main {
 #contact-section {
     scroll-margin-top: 65px;
 }
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fffefe;
+  padding: 10px;
+}
 
+.navBar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navBar ul li a {
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: rgb(5, 241, 48);
+}
+
+@media screen and (max-width: 768px) {
+  .navBar ul {
+    display: none;
+    flex-direction: column;
+    background: #ffffff;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+  }
+
+  .navBar ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .navBar {
